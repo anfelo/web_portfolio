@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% load static from staticfiles %}
+
+{% block static %}<link rel="stylesheet" href="{% static 'css/contact.css' %}">{% endblock %}
+
+{% block title %}Contact - anfelo{% endblock %}
+
+
+{% block content %}
+<div class="row">
+	<div class="col-lg-12">
+		{% if messages %}
+		<ul class="messages">
+			{% for message in messages %}
+			<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+				<div class="alert alert-secondary" role="alert">
+					{{ message }}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+		<h1>Contact me</h1>
+		<p>I’d like to hear from you! If you are around I'd love to have some coffee. <br> Send me an email or give me a call.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-8">
+		<form action="" method="POST" class="my-5">
+			<div class="form-group">
+				<label for="{{ form.name.id_for_label }}">Name*</label>
+				{{ form.name }}
+			</div>
+			<div class="form-group">
+				<label for="{{ form.email.id_for_label }}">Email*</label>
+				{{ form.email }}
+			</div>
+			<div class="form-group">
+				<label for="{{ form.message.id_for_label }}">Message*</label>
+				{{ form.message }}
+			</div>
+			{{ form.honeypot }}
+			{% csrf_token %}
+			<input class="btn btn-secondary" type="submit" value="Send Email">
+		</form>
+	</div>
+	<div class="col-lg-4 my-5">
+		<h3>Contact Info</h3>
+		<p>Email: af.osorio1341@gmail.com </p>
+		<p>Mobile: (+57) 314 2744651</p>
+		<p>Bogota, Colombia</p>
+	</div>
+</div>
+{% endblock %}

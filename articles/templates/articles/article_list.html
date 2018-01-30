@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% load static from staticfiles %}
+
+{% block title %}{% if topic %}{{ topic|title }}{% else %}All{% endif %} Articles{% endblock %}
+
+{% block static %}<link rel="stylesheet" href="{% static 'articles/css/articles.css' %}">{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Library</li>
+		</ol>
+	</nav>
+
+	{% if topic %}
+	<h1>{{ topic|title }} Articles</h1>
+	{% else %}
+	<h1>All Articles</h1>
+	{% endif %}
+	{% for article in articles %}
+	<div class="my-5">
+		<h6 class="text-muted"><strong>{{ article.created_at|date:"F j, Y"|upper }}</strong></h6>
+		<h2><a class="text-dark" href="{% url 'articles:detail' topic=article.topic pk=article.pk %}">{{ article.title }}</a></h2>
+		<p class="card-text">{{ article.description|truncatewords:20 }}</p>
+		<a class="text-primary" href="{% url 'articles:detail' topic=article.topic pk=article.pk %}">Read more</a>
+	</div>
+	{% endfor %}
+</div>
+{% endblock %}

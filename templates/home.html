@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% load static from staticfiles %}
+
+{% block static %}<link rel="stylesheet" href="{% static 'css/home.css' %}">{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+	<div class="container text-center px-lg-5">
+		<h1 class="display-5">Hi, I'm a fullstack web developer based in Bogota, Colombia</h1>
+		<a href="{% url 'contact' %}" class="btn btn-primary btn-lg my-3">Contact me</a>
+		<div class="col-xs-12">
+			<a href="#" class="text-primary">Download CV</a>
+		</div>
+	</div>
+	<div class="orbits">
+		<div class="nav-item-1 yellow-sun"></div>
+		<div id="nav-orbit1" class="orbit-nav item-2" data-speed="6"><div id="atom1" class="atom-nav pink-js"></div></div>
+		<div id="nav-orbit2" class="orbit-nav item-3" data-speed="5"><div id="atom2" class="atom-nav green-ios"></div></div>
+		<div id="nav-orbit3" class="orbit-nav item-4" data-speed="4"><div id="atom3" class="atom-nav blue-html"></div></div>
+		<div id="nav-orbit4" class="orbit-nav item-5" data-speed="3"><div id="atom4" class="atom-nav red-ruby"></div></div>
+		<div id="nav-orbit5" class="orbit-nav item-6" data-speed="2"><div id="atom5" class="atom-nav green-android"></div></div>
+	</div>
+</div>
+{% endblock %}
+
+{% block scripts %}<script src="{% static 'js/nav-orbits.js' %}"></script>{% endblock %}

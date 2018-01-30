@@ -1,0 +1,162 @@
+{% extends "layout.html" %}
+{% load static from staticfiles %}
+
+{% block static %}<link rel="stylesheet" href="{% static 'css/work.css' %}">{% endblock %}
+
+{% block title %}Work{% endblock %}
+
+{% block content %}
+<h1>My work</h1>
+<div class="projects-container jq-container">
+	<div class="projects-header">
+		<img class="tech-icon" src="{% static 'img/jq-icon.png' %}" alt="jquery logo">
+		<h4 class="projects-title">JQuery Apps</h4>
+	</div>
+	<div class="projects text-center">
+		<div class="project jq">
+			<span>
+				<h5>Rand(Quote)</h5>
+				<p>Random Quote Generator using JQuery and free API</p>
+				<a class="go-arrow" href="https://codepen.io/anfelo/full/GEmMdq/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project jq">
+			<span>
+				<h5>My Local Weather App</h5>
+				<p>Local weather app using forecast API and HTML Geolocation</p>
+				<a class="go-arrow" href="https://codepen.io/anfelo/full/bRqGLZ/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project jq">
+			<span>
+				<h5>Wiki App</h5>
+				<p>Wikipedia App using MediaWiki API</p>
+				<a class="go-arrow" href="https://codepen.io/anfelo/full/eRWGEK/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project jq">
+			<span>
+				<h5>Twitchsy</h5>
+				<p>Twitch app. See if your favorite streamer is online</p>
+				<a class="go-arrow" href="https://codepen.io/anfelo/full/owwZOM/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project jq">
+			<span>
+				<h5>Nostalgia CALC</h5>
+				<p>Basic calculator <br> design &amp; code</p>
+				<a class="go-arrow" href="https://codepen.io/anfelo/full/MoXojR/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project jq">
+			<span>
+				<h5>Simon Game</h5>
+				<p>Simon says game <br> design &amp; code</p>
+				<a class="go-arrow" href="https://codepen.io/anfelo/full/YQgJpq/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project jq">
+			<span>
+				<h5>Tic Tac Toe Game</h5>
+				<p>Try to beat the machine! <br> design &amp; code</p>
+				<a class="go-arrow" href="https://codepen.io/anfelo/full/ZyVOxa/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project jq">
+			<span>
+				<h5>Pomodoro Clock</h5>
+				<p>Perfect for timing my coding sessions</p>
+				<a class="go-arrow" href="https://codepen.io/anfelo/full/JJawGX/" target="_blank">Go!</a>
+			</span>
+		</div>
+	</div>
+</div>
+<div class="projects-container react-container">
+	<div class="projects-header">
+		<img class="tech-icon" src="{% static 'img/react-icon.png' %}" alt="react logo">
+		<h4 class="projects-title">React Apps</h4>
+	</div>
+	<div class="projects text-center">
+		<div class="project react">
+			<span>
+				<h5>Markdown Previewer</h5>
+				<p>Converts Github's flavoured markdown into html</p>
+				<a class="go-arrow" href="https://codepen.io/anfelo/full/YxGZdv/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project react">
+			<span>
+				<h5>FreeCodeCamp Leaderboard</h5>
+				<p>This App fetches data from FreeCodeCamp and diplays the user with the most points</p>
+				<a class="go-arrow" href="https://codepen.io/anfelo/full/zdoOxw/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project react">
+			<span>
+				<h5>Recipe Book</h5>
+				<p>Add, Remove or Edit your favorite recipes. Data is persisted with local storage</p>
+				<a class="go-arrow" href="https://codepen.io/anfelo/full/Nvbxwe/" target="_blank">Go!</a>
+			</span>
+		</div>
+	</div>
+</div>
+<div class="projects-container node-container">
+	<div class="projects-header">
+		<img class="tech-icon" src="{% static 'img/node-icon.png' %}" alt="jquey logo">
+		<h4 class="projects-title">Node Apps</h4>
+	</div>
+	<div class="projects text-center">
+		<div class="project node">
+			<span>
+				<h5>Timestamp Microservice</h5>
+				<p>This is an API that serves a timestamp json object with unix time and human readable date</p>
+				<a class="go-arrow" href="https://anfelo-timestamp-ms.glitch.me/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project node">
+			<span>
+				<h5>Request Headers</h5>
+				<p>This API returns an object with the IP address, language and operating system of the user's browser</p>
+				<a class="go-arrow" href="https://anfelo-req-headers.glitch.me/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project node">
+			<span>
+				<h5>URL-Shortener</h5>
+				<p>This is a URL shortener API build with Express and MongoDB</p>
+				<a class="go-arrow" href="https://anfelo-url-shortener.glitch.me/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project node">
+			<span>
+				<h5>File Metadata Microservice</h5>
+				<p>This is an app that serves a specified file metadata</p>
+				<a class="go-arrow" href="https://anfelo-file-metadata.glitch.me/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project node">
+			<span>
+				<h5>Image Abstraction Layer</h5>
+				<p>This is an image search abstraction layer API build with Express</p>
+				<a class="go-arrow" href="https://anfelo-image-search.glitch.me/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project node">
+			<span>
+				<h5>Pollover: Voting App</h5>
+				<p>A fullstack voting app build with Express and MongoDB</p>
+				<a class="go-arrow" href="https://anfelo-voting-app.glitch.me/" target="_blank">Go!</a>
+			</span>
+		</div>
+		<div class="project node">
+			<span>
+				<h5>Daplace: Nightlife App</h5>
+				<p>A fullstack nightlife app build with Express and MongoDB</p>
+				<a class="go-arrow" href="https://anfelo-daplace.herokuapp.com/" target="_blank">Go!</a>
+			</span>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block scripts %}<script src="{% static 'js/work.js' %}"></script>{% endblock %}

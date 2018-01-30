@@ -1,0 +1,5 @@
+{% load article_extras %}
+
+{% for topic in topics %}
+	<a class="dropdown-item" href="{% url 'articles:topiclist' topic=topic.name %}">{{ topic.name|upper }}</a>	
+{% endfor %}

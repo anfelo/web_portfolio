@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% load static from staticfiles %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div class="row my-5">
+	<div class="col-lg-6 mb-4">
+		<div class="picture-container my-4">
+			<img src="{% static 'img/profile.png'%}" alt="Andres Osorio's profile picture">
+		</div>
+		<p class="text-muted"><i>Hi, my name is Andres Osorio. I’m an electronics engineer passionate about web development. I’m a coffee addict and chillies lover.</i></p>
+	</div>
+	
+	<div class="col-lg-6">
+		<h3>What I Do</h3>
+		<p>Currently I work for a travel agency as a .NET web developer. My main role in the company is to beautify their current web apps and improve the user experience of their clients.</p> 
+		<p>It has been an amazing job experience. I have improved my knowledge in databases, the .NET framework and my frontend skills very rapidly. Additionally, I have learned a lot about the business.</p> 
+		<p>In my free time I like to read and learn about new web technologies and practice this concepts in side projects. I’m currently working on a mobile app that helps you discover Bogota by its hidden cafes.</p>
+
+		<a class="btn btn-primary" href="{% url 'contact' %}" role="button">Contact Me</a>
+	</div>
+</div>
+
+{% endblock %}

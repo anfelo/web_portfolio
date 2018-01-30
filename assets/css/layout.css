@@ -1,0 +1,208 @@
+/*-------------------*\
+		General
+\*-------------------*/	
+
+body {
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bree Serif', 'Times New Roman', serif;
+}
+
+input[type="text"],
+input[type="email"], 
+textarea {
+	outline: none;
+	box-shadow:none !important;
+	border:1px solid #ccc !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+
+/*-------------------*\
+		Colors
+\*-------------------*/	
+
+a.text-primary {
+	color: #ff8d7b !important;
+}
+
+a.text-primary:hover {
+	color: #ff8d7bbb !important;
+	text-decoration: none;
+}
+
+.blue-html {
+	background: #39add1;
+}
+.blue-css {
+	background: #3079ab;
+}
+.pink-js {
+	background: #c25975;
+}
+.red-ruby {
+	background: #e15258;
+}
+.orange {
+	background-color: #f9845b;
+}
+.purple-wp {
+	background-color: #838cc7;
+}
+.purple-php {
+	background-color: #7d669e;
+}
+.green-ios {
+	background-color: #53bbb4;
+}
+.green-android {
+	background-color: #51b46d;
+}
+.green-node {
+	background-color: #43853d;
+}
+.yellow-sun {
+	background-color: #e0ab18;
+}
+.pink-python {
+	background-color: #f092b0;
+}
+
+
+/*-------------------*\
+		Wrappers
+\*-------------------*/	
+
+.main-wrapper {
+	padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+	.main-wrapper {
+		padding: 0 20%;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.main-wrapper {
+		padding: 0 5%;
+	}
+}
+
+.picture-container {
+	margin: auto;
+	width: 250px;
+}
+
+.picture-container img {
+	width: 100%;
+}
+
+.social-icons-container {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.social-icons-container img {
+	margin: 0 5px;
+	width: 45px;
+	height: 45px;
+}
+
+/*-------------------*\
+		Navbar
+\*-------------------*/	
+
+.navbar-light .navbar-brand {
+	font-family: 'Chewy', cursive;
+	font-size: 1.7rem;
+	line-height: 50px;
+	color:#333;
+	transition: opacity 0.15s ease-in-out;
+} 
+
+.navbar-light .navbar-brand:hover {
+	opacity: 0.9;
+	color: #ff8d7b;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #ff8d7b;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+	color: #ff8d7b;
+}
+
+/*-------------------*\
+		Buttons
+\*-------------------*/	
+
+.btn {
+	border-radius: 6px;
+}
+
+.btn-primary {
+	color: #333;
+	background-color: white;
+	border: 3px solid #333;
+}
+
+.btn-primary:hover {
+	color: #333;
+	border: 3px solid #333;
+	background-color: white;
+	box-shadow: 3px 3px #333;
+}
+
+.btn-secondary {
+	color: white;
+	background-color: #ff8d7b;
+	border: 3px solid #ff8d7b;
+}
+
+.btn-secondary:hover {
+	color: #ff8d7b;
+	background-color: white;
+	border: 3px solid #ff8d7b;
+}
+
+/*-------------------*\
+		Footer
+\*-------------------*/	
+
+footer {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.social-icon {
+	transition: opacity 0.15s ease-in-out;
+}
+
+.social-icon:hover {
+	opacity: 0.9;	
+}
+
+@media (min-width: 768px) {
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.social-icons-container img {
+		width: 35px;
+		height: 35px;
+	}
+}
