@@ -17,3 +17,6 @@ tests/.coverage
 build/
 tests/report/
 local_settings.py
+*.pyc
+db.sqlite3
+myvenv
