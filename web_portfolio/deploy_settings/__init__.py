@@ -1,4 +1,5 @@
 import dj_database_url
+
 from web_portfolio.settings import *
 
 
