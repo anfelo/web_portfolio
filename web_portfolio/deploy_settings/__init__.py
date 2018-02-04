@@ -3,8 +3,8 @@ import dj_database_url
 from web_portfolio.settings import *
 
 
-DEBUG = False
-# TEMPLATE_DEBUG = DEBUG
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = ['localhost', '.herokuapp.com']
 
