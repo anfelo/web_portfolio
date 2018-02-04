@@ -4,7 +4,7 @@ from web_portfolio.settings import *
 
 
 DEBUG = False
-TEMPLATE_DEBUG = DEBUG
+# TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = ['localhost', '.herokuapp.com']
 
