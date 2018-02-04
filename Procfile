@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath web_portfolio web_portfolio.deploy --log-file -
+web: gunicorn web_portfolio web_portfolio.deploy --log-file -
