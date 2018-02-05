@@ -39,7 +39,7 @@ SECRET_KEY = '4fwwef+nog93vr8lfa3b0-@g4sy-msp4o1byt@qkpcwol@enx8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com']
 
 
 # Application definition
@@ -142,9 +142,6 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),
 )
 
-
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'contact_emails')
 
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
