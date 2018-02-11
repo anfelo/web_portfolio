@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% load article_extras %}
 
-{% block title %}{{ article.title }} | {{ article.topic }}{% endblock %}
+{% block title %}{{ article.title }} | {{ article.topic|title }}{% endblock %}
 
 {% block content %}
 <article class="markdown-body">
