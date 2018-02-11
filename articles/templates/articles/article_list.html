@@ -7,12 +7,6 @@
 
 {% block content %}
 <div class="container-fluid">
-	<nav aria-label="breadcrumb">
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="#">Home</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Library</li>
-		</ol>
-	</nav>
 
 	{% if topic %}
 	<h1>{{ topic|title }} Articles</h1>
@@ -23,8 +17,8 @@
 	<div class="my-5">
 		<h6 class="text-muted"><strong>{{ article.created_at|date:"F j, Y"|upper }}</strong></h6>
 		<h2><a class="text-dark" href="{% url 'articles:detail' topic=article.topic pk=article.pk %}">{{ article.title }}</a></h2>
-		<p class="card-text">{{ article.description|truncatewords:20 }}</p>
-		<a class="text-primary" href="{% url 'articles:detail' topic=article.topic pk=article.pk %}">Read more</a>
+		<p class="card-text">{{ article.description}}</p>
+		<a class="text-primary bounce" href="{% url 'articles:detail' topic=article.topic pk=article.pk %}">Read more</a>
 	</div>
 	{% endfor %}
 </div>

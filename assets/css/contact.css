@@ -6,3 +6,8 @@
 	border: 1px solid #ced4da;
 	outline: none;
 }
+
+.messages {
+	padding: 0;
+	list-style: none;
+}

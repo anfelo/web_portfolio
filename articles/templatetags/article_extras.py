@@ -1,8 +1,11 @@
+import markdown2
+
 from django.urls import resolve
 from django import template
 from django.utils.safestring import mark_safe
+from django.utils.encoding import force_text
+from django.template.defaultfilters import stringfilter
 
-import markdown2
 
 from ..models import Topic
 
@@ -36,11 +39,12 @@ def all_topics():
 
 
 @register.filter('markdown_to_html')
+@stringfilter
 def markdown_to_html(markdown_text):
     '''
     Converts markdown to html
     '''
-    html_body = markdown2.markdown(markdown_text, extras=['fenced-code-blocks', 'code-friendly'])
+    html_body = markdown2.markdown(force_text(markdown_text), extras=['fenced-code-blocks', 'code-friendly'])
     return mark_safe(html_body)
 
 # markdown_to_html() will convert markdown text into html to be rendered

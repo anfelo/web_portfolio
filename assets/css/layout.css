@@ -15,6 +15,7 @@ h5 {
 	font-family: 'Bree Serif', 'Times New Roman', serif;
 }
 
+
 input[type="text"],
 input[type="email"], 
 textarea {
@@ -23,60 +24,77 @@ textarea {
 	border:1px solid #ccc !important;
 }
 
-a {
+
+a {		
 	text-decoration: none !important;
 }
+
+a:hover {
+	color: #ff8d7b !important;
+	text-decoration: none;
+}
+
+a:active {
+	background-color: transparent;
+}
+
+
 
 
 /*-------------------*\
 		Colors
-\*-------------------*/	
-
-a.text-primary {
-	color: #ff8d7b !important;
-}
-
-a.text-primary:hover {
-	color: #ff8d7bbb !important;
-	text-decoration: none;
-}
+\*-------------------*/
 
 .blue-html {
 	background: #39add1;
 }
+
 .blue-css {
 	background: #3079ab;
 }
+
 .pink-js {
 	background: #c25975;
 }
+
 .red-ruby {
 	background: #e15258;
 }
+
 .orange {
 	background-color: #f9845b;
 }
+
 .purple-wp {
 	background-color: #838cc7;
 }
+
 .purple-php {
 	background-color: #7d669e;
 }
+
 .green-ios {
 	background-color: #53bbb4;
 }
+
 .green-android {
 	background-color: #51b46d;
 }
+
 .green-node {
 	background-color: #43853d;
 }
+
 .yellow-sun {
 	background-color: #e0ab18;
 }
+
 .pink-python {
 	background-color: #f092b0;
 }
+
+
+
 
 
 /*-------------------*\
@@ -119,6 +137,10 @@ a.text-primary:hover {
 	height: 45px;
 }
 
+
+
+
+
 /*-------------------*\
 		Navbar
 \*-------------------*/	
@@ -144,6 +166,13 @@ a.text-primary:hover {
 	color: #ff8d7b;
 }
 
+.dropdown-item:active {
+	background-color: #f8f9fa;
+}
+
+
+
+
 /*-------------------*\
 		Buttons
 \*-------------------*/	
@@ -158,7 +187,9 @@ a.text-primary:hover {
 	border: 3px solid #333;
 }
 
-.btn-primary:hover {
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
 	color: #333;
 	border: 3px solid #333;
 	background-color: white;
@@ -176,6 +207,10 @@ a.text-primary:hover {
 	background-color: white;
 	border: 3px solid #ff8d7b;
 }
+
+
+
+
 
 /*-------------------*\
 		Footer
@@ -205,4 +240,167 @@ footer {
 		width: 35px;
 		height: 35px;
 	}
+}
+
+
+
+
+
+/*-------------------*\
+	    Links
+\*-------------------*/	
+
+a.text-primary {
+	color: #ff8d7b !important;
+}
+
+a.text-primary:hover {
+	color: #ff8d7bbb !important;
+}
+
+
+
+
+
+/*-------------------*\
+	   Markdown
+\*-------------------*/	
+  
+.markdown-body a {
+	color: #ff8d7b !important;
+	background-color: transparent;
+}
+  
+.markdown-body a:active,
+.markdown-body a:hover {
+	color: #ff8d7bbb !important;
+	outline-width: 0;
+}
+  
+.markdown-body strong {
+	font-weight: inherit;
+}
+  
+.markdown-body strong {
+	font-weight: bolder;
+}
+  
+.markdown-body img {
+	border-style: none;
+}
+  
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+  
+.markdown-body hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+  
+.markdown-body strong {
+	font-weight: 600;
+}
+  
+.markdown-body code {
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+  
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+    
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font-size: 11px;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #c6cbd1;
+	border-bottom-color: #959da5;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #959da5;
+}
+  
+  
+.markdown-body code {
+	padding: 0.2em 0.4em;
+	margin: 0;
+	font-size: 85%;
+	background-color: rgba(27,31,35,0.05);
+	color: #444d56;
+	border-radius: 3px;
+}
+  
+.markdown-body pre {
+	word-wrap: normal;
+}
+  
+.markdown-body pre>code {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	background: transparent;
+	border: 0;
+}
+  
+.markdown-body .highlight {
+	margin-bottom: 16px;
+}
+  
+.markdown-body .highlight pre {
+	margin-bottom: 0;
+	word-break: normal;
+}
+  
+.markdown-body .codehilite pre,
+.markdown-body pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #333;
+	border-radius: 3px;
+}
+  
+.markdown-body pre code {
+	display: inline;
+	max-width: auto;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: transparent;
+	border: 0;
+}
+    
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #d1d5da;
+	border-bottom-color: #c6cbd1;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+    
+.markdown-body hr {
+	border-bottom-color: #eee;
 }
