@@ -13,7 +13,6 @@ def articles_list(request):
 def articles_by_topic(request, topic):
 	topic_pk = get_object_or_404(models.Topic, name=topic)
 	articles = models.Article.objects.filter(topic=topic_pk)
-	print(articles)
 	return render(request, 'articles/article_list.html', {'articles': articles,
                                                           'topic': topic})
 
