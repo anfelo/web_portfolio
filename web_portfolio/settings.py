@@ -14,6 +14,7 @@ import os
 
 
 def get_env_variable(var_name):
+    """Get the enviroment variable or return exception"""
     try:
         return os.environ[var_name]
     except KeyError:
@@ -31,14 +32,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = get_env_variable('SECRET_KEY')
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com', '.anfelo.com']
 
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = get_env_variable('SECRET_KEY')
 
 # Application definition
 
@@ -145,5 +145,3 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 INTERNAL_IPS = ('127.0.0.1','::1', '0.0.0.0')
-
-DEBUG_TOOLBAR_PATCH_SETTINGS = False
