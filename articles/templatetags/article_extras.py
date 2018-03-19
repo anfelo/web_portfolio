@@ -39,7 +39,6 @@ def all_topics():
 
 
 @register.filter('markdown_to_html')
-@stringfilter
 def markdown_to_html(markdown_text):
     '''
     Converts markdown to html

@@ -49,7 +49,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'markdown2',
+=======
+    'debug_toolbar',
+>>>>>>> fd62d5665d2281d802be737743525b2fc2c50597
     'articles',
 ]
 
@@ -60,7 +64,12 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+<<<<<<< HEAD
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+=======
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',   
+    'debug_toolbar.middleware.DebugToolbarMiddleware', 
+>>>>>>> fd62d5665d2281d802be737743525b2fc2c50597
 ]
 
 ROOT_URLCONF = 'web_portfolio.urls'
@@ -144,3 +153,6 @@ EMAIL_HOST_PASSWORD = get_env_variable('EMAIL_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
+INTERNAL_IPS = ('127.0.0.1','::1', '0.0.0.0')
+
+DEBUG_TOOLBAR_PATCH_SETTINGS = False
