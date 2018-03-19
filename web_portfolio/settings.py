@@ -38,7 +38,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com', '.anfelo.com']
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = get_env_variable('SECRET_KEY')
+SECRET_KEY = "c#6j*awozb+ymky-2cd4q$ta$1yyk6nut4+d*nwgr7d#^!)pkw"
 
 # Application definition
 
@@ -135,14 +135,14 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),
-    os.path.join(BASE_DIR, '/articles/assets'),
+    os.path.join(BASE_DIR, 'articles/assets'),
 )
 
-
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'anfelo'
-EMAIL_HOST_PASSWORD = get_env_variable('EMAIL_PASSWORD')
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+if not DEBUG:
+    EMAIL_HOST = 'smtp.sendgrid.net'
+    EMAIL_HOST_USER = 'anfelo'
+    EMAIL_HOST_PASSWORD = get_env_variable('EMAIL_PASSWORD')
+    EMAIL_PORT = 587
+    EMAIL_USE_TLS = True
 
 INTERNAL_IPS = ('127.0.0.1','::1', '0.0.0.0')
