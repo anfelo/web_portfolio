@@ -11,6 +11,7 @@ class Topic(models.Model):
 class Article(models.Model):
 	created_at = models.DateTimeField(auto_now_add=True)
 	title = models.CharField(max_length=255)
+	url_name = models.CharField(max_length=255, default='')
 	description = models.TextField()
 	topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
 	content = models.TextField(default='')
