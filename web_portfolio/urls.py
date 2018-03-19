@@ -28,10 +28,4 @@ urlpatterns = [
     path('work/', views.work, name='work'),
 ]
 
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns += [
-        path('__debug__/', include(debug_toolbar.urls)),
-    ]
-
 urlpatterns += staticfiles_urlpatterns()
