@@ -384,6 +384,7 @@ a.text-primary:hover {
 	line-height: inherit;
 	word-wrap: normal;
 	background-color: transparent;
+	color: white;
 	border: 0;
 }
     

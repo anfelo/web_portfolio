@@ -6,7 +6,7 @@
 {% block content %}
 <article class="markdown-body">
 	<h6 class="text-muted"><strong>{{ article.created_at|date:"F j, Y"|upper }}</strong></h6>
-	<h2>{{ article.title }}</h2>
+	<h1>{{ article.title }}</h1>
 	{{ article.content|markdown_to_html }}
 </article>
 {% endblock %}
