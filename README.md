@@ -1,3 +1,13 @@
-# web_portfolio
+# anfelo: Web portfolio/blog
 
-This is my personal web portfolio. I built it with django a postgreSQL database.
+This is my personal web portfolio, where I like to showcase my work and write some short dev articles.
+
+
+## Technology:
+
+**Framework:** Django
+**DataBase:** PostgreSQL
+**Platform:** [PythonAnywhere](https://www.pythonanywhere.com/)
+
+---
+build with love <3
