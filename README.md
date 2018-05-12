@@ -5,9 +5,11 @@ This is my personal web portfolio, where I like to showcase my work and write so
 
 ## Technology:
 
-**Framework:** Django
-**DataBase:** PostgreSQL
-**Platform:** [PythonAnywhere](https://www.pythonanywhere.com/)
+* **Framework:** Django
+
+* **DataBase:** PostgreSQL
+
+* **Platform:** [PythonAnywhere](https://www.pythonanywhere.com/)
 
 ---
 build with love <3
